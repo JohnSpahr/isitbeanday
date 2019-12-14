@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		.label1 {
+			font-family: "Comic Sans MS", "Comic Sans", cursive;
+                	font-size: 60px;
+			color: white;
+		}
+
+		.center {
+ 			text-align: center;
+			background-color: black;
+		}
+
+		.label2 {
+			font-family: Arial, Helvetica, sans-serif;
+                	font-size: 15px;
+			color: white;
+		}
+
+		.label3 {
+			font-family: "Comic Sans MS", "Comic Sans", cursive;
+                	font-size: 32px;
+			color: white;
+		}
+
+		a {
+			font-family: Arial, Helvetica, sans-serif;
+                	font-size: 15px;
+			color: white;
+		}
+
+		a:hover {
+			color: blue;
+		}
+	</style>
+
+	<title>Is it Bean day?</title>
+
+	<head>
+		<link rel="shortcut icon" href="https://github.com/JohnSpahr/IsItBeanDay/blob/master/beans.jpg?raw=true"/>
+	</head>
+	<body class="center">
+		<br>
+		<label class="label3" id="credit">Is it Bean Day?</label>
+		<br><br>
+		<img src="https://github.com/JohnSpahr/IsItBeanDay/blob/master/beans.jpg?raw=true"/>
+		<br><br>
+		<label class="label1" id="answer">Please wait...</label>
+		<br><br>
+		<label class="label2" id="credit">Created by John Spahr.</label>
+		&nbsp;
+		<a target="_blank" rel="noopener noreferrer" href="https://github.com/johnspahr/isitbeanday">GitHub Page</a>
+	</body>
+</html>
+
+<script>
+	var today = new Date();
+	var dayOfMonth = String(today.getDate()).padStart(2, '0')
+	var currentMonth = String(today.getMonth() + 1).padStart(2, '0');
+	
+	today = currentMonth + "/" + dayOfMonth;
+	
+	var label = document.getElementById("answer");
+
+	if (today == "1/6")
+	{
+		//Today is Bean Day
+		label.style.color="#ffff00";
+		label.innerText = "Yes! Today is bean day! Hooray!"
+	} else {
+		//Today is not Bean Day
+		label.style.color="#ff0000";
+		label.innerText = "No. Bean day is not today, unfortunately."
+	}
+</script>
