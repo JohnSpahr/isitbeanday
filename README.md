@@ -8,4 +8,4 @@ https://johnspahr.github.io/IsItBeanDay/IsItBeanDay
 ![Screenshot](https://github.com/JohnSpahr/IsItBeanDay/blob/master/BeanDay.PNG?raw=true)
 
 ## Note
-Bean Day is actually a real Holiday on January 6th.
+Bean Day is actually a real holiday on January 6th.
