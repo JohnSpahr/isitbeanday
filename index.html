@@ -1,79 +1,43 @@
+<!-- IS IT BEAN DAY? - Created by John Spahr -->
+
 <!DOCTYPE html>
 <html>
-	<head>
-	<style>
-		.label1 {
-			font-family: "Comic Sans MS", "Comic Sans", "Chewy", sans-serif;
-                	font-size: 60px;
-			color: white;
-		}
 
-		.center {
- 			text-align: center;
-			background-color: black;
-		}
+<head>
+    <title>Is it Bean Day?</title>
+    <link href="styles/stylesheet.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Is it Bean Day?" />
+    <meta property="og:url" content="https://johnspahr.github.io/isitbeanday" />
+    <meta property="og:image" content="images/BEANS.jpg" />
+    <meta property="og:description" content="Bean Day is a very important holiday that occurs every year on January 6th! Is today Bean Day? Find out here!" />
+    <meta name="keywords" content="Bean Day, Holiday, Bean, Day, Stupid Project">
+    <meta name="description" content="Bean Day is a very important holiday that occurs every year on January 6th! Is today Bean Day? Find out here!">
 
-		.label2 {
-			font-family: Arial, Helvetica, sans-serif;
-                	font-size: 15px;
-			color: white;
-		}
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="images/BEANS.jpg" sizes="180x180">
+    <link rel="icon" href="images/BEANS.jpg" type="image/png">
+    <link rel="icon" href="images/BEANS.jpg" sizes="16x16" type="image/png">
+    <link href="images/BEANS.ico" rel="icon" type="image/ico" />
+</head>
 
-		.label3 {
-			font-family: "Comic Sans MS", "Comic Sans", "Chewy", sans-serif;
-                	font-size: 30px;
-			color: white;
-		}
+<body class="center">
+    <br>
+    <label class="label3" id="credit">Is it Bean Day?</label>
+    <br><br>
+    <img src="images/BEANS.jpg" />
+    <br><br>
+    <label class="label1" id="answer">Please wait...</label>
+    <br><br><br>cvv
+    <label class="label2" id="credit">Created by John Spahr.</label> &nbsp;
+    <a target="_blank" rel="noopener noreferrer" href="https://github.com/johnspahr/isitbeanday">GitHub Page</a>
+    <br><br>
+    <p class="label2"><b>Pro Tip: </b>Make this your homepage to always know if it's Bean Day or not!</p>
+    <br>
+</body>
 
-		a {
-			font-family: Arial, Helvetica, sans-serif;
-                	font-size: 15px;
-			color: white;
-		}
-
-		a:hover {
-			color: blue;
-		}
-	</style>
-		<title>Is it Bean Day?</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	        <meta name="theme-color" content="#000">
-		<!-- Favicons -->
-	        <link rel="apple-touch-icon" href="https://github.com/JohnSpahr/IsItBeanDay/blob/master/beans.jpg?raw=true" sizes="180x180">
-	        <link rel="icon" href="https://github.com/JohnSpahr/IsItBeanDay/blob/master/beans.jpg?raw=true" type="image/png">
-	        <link rel="icon" href="https://github.com/JohnSpahr/IsItBeanDay/blob/master/beans.jpg?raw=true" sizes="16x16" type="image/png">
-	</head>
-	<body class="center">
-		<br>
-		<label class="label3" id="credit">Is it Bean Day?</label>
-		<br><br>
-		<img src="https://github.com/JohnSpahr/IsItBeanDay/blob/master/beans.jpg?raw=true"/>
-		<br><br>
-		<label class="label1" id="answer">Please wait...</label>
-		<br><br>
-		<label class="label2" id="credit">Created by John Spahr.</label>
-		&nbsp;
-		<a target="_blank" rel="noopener noreferrer" href="https://github.com/johnspahr/isitbeanday">GitHub Page</a>
-	</body>
 </html>
 
-<script>
-	var today = new Date();
-	var dayOfMonth = String(today.getDate()).padStart(2, '0')
-	var currentMonth = String(today.getMonth() + 1).padStart(2, '0');
-	
-	today = currentMonth + "/" + dayOfMonth;
-	
-	var label = document.getElementById("answer");
-
-	if (today == "01/06")
-	{
-		//Today is Bean Day
-		label.style.color="#ffff00";
-		label.innerText = "Yes! Today is bean day! Hooray!"
-	} else {
-		//Today is not Bean Day
-		label.style.color="#ff0000";
-		label.innerText = "No. Bean day is not today, unfortunately."
-	}
-</script>
+<script src="script.js"></script>
